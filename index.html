@@ -76,21 +76,6 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-<form
-  action="https://formspree.io/f/maqdbyay"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
 </header>
 
 <!-- About Section -->
@@ -134,7 +119,17 @@ body, html {
     </div>
   </div>
 </div>
-
+<div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+                <form action="https://formspree.io/f/maqdbyay" method="POST">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Type your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 <!-- Team Section -->
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">THE TEAM</h3>
@@ -403,4 +398,5 @@ function w3_close() {
 
 </body>
 </html>
+
 
